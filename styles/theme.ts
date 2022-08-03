@@ -1,5 +1,10 @@
 import { extendTheme, theme } from "@chakra-ui/react";
 import type { ComponentStyleConfig } from '@chakra-ui/theme'
+import { colors } from "utils/constants";
+
+// const customTheme = {
+  
+// }
 
 const customTheme = {
   ...theme,
@@ -44,12 +49,12 @@ const Button: ComponentStyleConfig = {
     variants: {
       outline: {
         border: '2px solid',
-        borderColor: 'purple.500',
-        color: 'purple.500',
+        borderColor: colors.primary,
+        color: colors.primary,
       },
       solid: {
-        bg: 'purple.500',
-        color: 'red',
+        bg: colors.primary,
+        color: colors.secondary,
       },
     },
     // The default size and variant values
